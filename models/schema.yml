@@ -6,6 +6,11 @@ sources:
     tables:
       - name: raw_cc_stock
         description: stock of products
+        columns:
+          - name: model
+            description: ID of model
       - name: raw_cc_sales
         description: sales of products
-        
+        tests:
+           - unique:
+              column_name: "(product_id || '-' || date_date)"
