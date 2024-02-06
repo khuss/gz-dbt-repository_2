@@ -14,3 +14,14 @@ sources:
         tests:
            - unique:
               column_name: "(product_id || '-' || date_date)"
+
+models:
+  - name:  stg_raw_data_circle__raw_cc_sales
+    description: cleaning of sales model
+
+  - name:  stg_raw_data_circle__raw_cc_stock
+    description: cleaning of stock model
+
+  - name: int_sales_stock
+    description: combination of stock and sales model
+         
